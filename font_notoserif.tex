@@ -1,0 +1,538 @@
+\documentclass[12pt]{article}
+\usepackage[table]{xcolor}
+\usepackage{fontspec}
+\setmainfont[
+    Path = c:/windows/fonts/, 
+		 Extension = .ttf,
+    UprightFont 	= *-Regular,
+%    BoldFont = *-Bold,
+    ItalicFont = *-Italic,
+%    BoldItalicFont = *-BoldItalic,
+%    FontFace = {ul}{\shapedefault}{*-Thin},
+%    FontFace = {ul}{it}{*-ThinItalic},
+%    FontFace = {el}{\shapedefault}{*-ExtraLight},
+%    FontFace = {el}{it}{*-ExtraLightItalic},
+    FontFace = {l}{\shapedefault}{*-Light},
+    FontFace = {l}{it}{*-LightItalic},
+    FontFace = {sl}{\shapedefault}{*-Regular},
+    FontFace = {sl}{it}{*-Italic},
+%%    FontFace = {m}{\shapedefault}{*-Medium},
+%%    FontFace = {m}{it}{*-MediumItalic},
+%    FontFace = {sb}{\shapedefault}{*-SemiBold},
+%    FontFace = {sb}{it}{*-SemiBoldItalic},
+    FontFace = {b}{\shapedefault}{*-Bold},
+    FontFace = {b}{it}{*-BoldItalic},
+%    FontFace = {eb}{\shapedefault}{*-ExtraBold},
+%    FontFace = {eb}{it}{*-ExtraBoldItalic},
+    FontFace = {ub}{\shapedefault}{*-Black},
+    FontFace = {ub}{it}{*-BlackItalic},
+%
+%    FontFace = {ulec}{\shapedefault}{*-ExtraCondensedThin},
+%    FontFace = {ulec}{it}{*-ExtraCondensedThinItalic},
+%    FontFace = {elec}{\shapedefault}{*-ExtraCondensedExtraLight},
+%    FontFace = {elec}{it}{*-ExtraCondensedExtraLightItalic},
+%    FontFace = {lec}{\shapedefault}{*-ExtraCondensedLight},
+%    FontFace = {lec}{it}{*-ExtraCondensedLightItalic},
+%    FontFace = {slec}{\shapedefault}{*-ExtraCondensed},
+%    FontFace = {slec}{it}{*-ExtraCondensedItalic},
+%    FontFace = {ec}{\shapedefault}{*-ExtraCondensedMedium},
+%    FontFace = {ec}{it}{*-ExtraCondensedMediumItalic},
+%    FontFace = {sbec}{\shapedefault}{*-ExtraCondensedSemiBold},
+%    FontFace = {sbec}{it}{*-ExtraCondensedSemiBoldItalic},
+%    FontFace = {bec}{\shapedefault}{*-ExtraCondensedBold},
+%    FontFace = {bec}{it}{*-ExtraCondensedBoldItalic},
+%    FontFace = {ebec}{\shapedefault}{*-ExtraCondensedExtraBold},
+%    FontFace = {ebec}{it}{*-ExtraCondensedExtraBoldItalic},
+%    FontFace = {ubec}{\shapedefault}{*-ExtraCondensedBlack},
+%    FontFace = {ubec}{it}{*-ExtraCondensedBlackItalic},
+%
+    FontFace = {ulc}{\shapedefault}{*-CondensedThin},
+    FontFace = {ulc}{it}{*-CondensedThinItalic},
+    FontFace = {elc}{\shapedefault}{*-CondensedLight},
+    FontFace = {elc}{it}{*-CondensedLightItalic},
+    FontFace = {lc}{\shapedefault}{*-CondensedLight},
+    FontFace = {lc}{it}{*-CondensedLightItalic},
+    FontFace = {slc}{\shapedefault}{*-Condensed},
+    FontFace = {slc}{it}{*-CondensedItalic},
+    FontFace = {c}{\shapedefault}{*-CondensedMedium},
+    FontFace = {c}{it}{*-CondensedMediumItalic},
+    FontFace = {sbc}{\shapedefault}{*-CondensedSemiBold},
+    FontFace = {sbc}{it}{*-CondensedSemiBoldItalic},
+    FontFace = {bc}{\shapedefault}{*-CondensedBold},
+    FontFace = {bc}{it}{*-CondensedBoldItalic},
+    FontFace = {ebc}{\shapedefault}{*-CondensedBold},
+    FontFace = {ebc}{it}{*-CondensedBoldItalic},
+    FontFace = {ubc}{\shapedefault}{*-CondensedBlack},
+    FontFace = {ubc}{it}{*-CondensedBlackItalic},
+%
+%    FontFace = {ulsc}{\shapedefault}{*-SemiCondensedThin},
+%    FontFace = {ulsc}{it}{*-SemiCondensedThinItalic},
+%    FontFace = {elsc}{\shapedefault}{*-SemiCondensedExtraLight},
+%    FontFace = {elsc}{it}{*-SemiCondensedExtraLightItalic},
+%    FontFace = {lsc}{\shapedefault}{*-SemiCondensedLight},
+%    FontFace = {lsc}{it}{*-SemiCondensedLightItalic},
+%    FontFace = {slsc}{\shapedefault}{*-SemiCondensed},
+%    FontFace = {slsc}{it}{*-SemiCondensedItalic},
+%    FontFace = {sc}{\shapedefault}{*-SemiCondensedMedium},
+%    FontFace = {sc}{it}{*-SemiCondensedMediumItalic},
+%    FontFace = {sbsc}{\shapedefault}{*-SemiCondensedSemiBold},
+%    FontFace = {sbsc}{it}{*-SemiCondensedSemiBoldItalic},
+%    FontFace = {bsc}{\shapedefault}{*-SemiCondensedBold},
+%    FontFace = {bsc}{it}{*-SemiCondensedBoldItalic},
+%    FontFace = {ebsc}{\shapedefault}{*-SemiCondensedExtraBold},
+%    FontFace = {ebsc}{it}{*-SemiCondensedExtraBoldItalic},
+%    FontFace = {ubsc}{\shapedefault}{*-SemiCondensedBlack},
+%    FontFace = {ubsc}{it}{*-SemiCondensedBlackItalic},
+]{Noto Serif}
+%%\setmainfont{Noto Sans}
+
+
+\newcommand\testtext{{\large abc qwerty}}%\fontname\font}
+
+\begin{document}
+
+
+%\end{tabular}
+%------------------------------
+\begin{tabular}{llll}
+\hline
+\rowcolor{blue!12}
+Font & Series & Upright & Italic \\
+%ultralight & 
+%ul  & 
+%\fontseries{ul}\selectfont\testtext  &
+%\fontseries{ul}\fontshape{it}\selectfont\testtext  \\
+%%
+%extralight & 
+%el & 
+%\fontseries{el}\selectfont\testtext  &
+%\fontseries{el}\fontshape{it}\selectfont\testtext  \\
+%%
+light & 
+l & 
+\fontseries{l}\selectfont\testtext  &
+\fontseries{l}\fontshape{it}\selectfont\testtext  \\
+%
+semilight & 
+sl & 
+\fontseries{sl}\selectfont\testtext  &
+\fontseries{sl}\fontshape{it}\selectfont\testtext  \\
+%%
+%medium & 
+%m & 
+%\fontseries{m}\selectfont\testtext  &
+%\fontseries{m}\fontshape{it}\selectfont\testtext  \\
+%%
+%semibold & 
+%sb & 
+%\fontseries{sb}\selectfont\testtext  &
+%\fontseries{sb}\fontshape{it}\selectfont\testtext  \\
+%%
+bold & 
+b & 
+\fontseries{b}\selectfont\testtext  &
+\fontseries{b}\fontshape{it}\selectfont\testtext  \\
+%
+%extrabold & 
+%eb & 
+%\fontseries{eb}\selectfont\testtext  &
+%\fontseries{eb}\fontshape{it}\selectfont\testtext  \\
+%%
+ultrabold & 
+eb & 
+\fontseries{ub}\selectfont\testtext  &
+\fontseries{ub}\fontshape{it}\selectfont\testtext  \\
+\hline
+\end{tabular}
+
+%%------------------------------
+%\bigskip
+%\begin{tabular}{llll}
+%\hline
+%\rowcolor{blue!12}
+%Font & Series & Upright & Italic \\
+%%
+%ultralight & 
+%ulec  & 
+%\fontseries{ulec}\selectfont\testtext  &
+%\fontseries{ulec}\fontshape{it}\selectfont\testtext  \\
+%%
+%extralight & 
+%elec & 
+%\fontseries{elec}\selectfont\testtext  &
+%\fontseries{elec}\fontshape{it}\selectfont\testtext  \\
+%%
+%light & 
+%lec & 
+%\fontseries{lec}\selectfont\testtext  &
+%\fontseries{lec}\fontshape{it}\selectfont\testtext  \\
+%%
+%semilight & 
+%slec & 
+%\fontseries{slec}\selectfont\testtext  &
+%\fontseries{slec}\fontshape{it}\selectfont\testtext  \\
+%%
+%medium & 
+%ec & 
+%\fontseries{ec}\selectfont\testtext  &
+%\fontseries{ec}\fontshape{it}\selectfont\testtext  \\
+%%
+%semibold & 
+%sbec & 
+%\fontseries{sbec}\selectfont\testtext  &
+%\fontseries{sbec}\fontshape{it}\selectfont\testtext  \\
+%%
+%bold & 
+%bec & 
+%\fontseries{bec}\selectfont\testtext  &
+%\fontseries{bec}\fontshape{it}\selectfont\testtext  \\
+%%
+%extrabold & 
+%ebec & 
+%\fontseries{ebec}\selectfont\testtext  &
+%\fontseries{ebec}\fontshape{it}\selectfont\testtext  \\
+%%
+%ultrabold & 
+%ebec & 
+%\fontseries{ubec}\selectfont\testtext  &
+%\fontseries{ubec}\fontshape{it}\selectfont\testtext  \\
+%\hline
+%\end{tabular}
+
+%------------------------------
+\bigskip
+\begin{tabular}{llll}
+\hline
+\rowcolor{blue!12}
+Font & Series & Upright & Italic \\
+%
+ultralight & 
+ulc  & 
+\fontseries{ulc}\selectfont\testtext  &
+\fontseries{ulc}\fontshape{it}\selectfont\testtext  \\
+%
+extralight & 
+elc & 
+\fontseries{elc}\selectfont\testtext  &
+\fontseries{elc}\fontshape{it}\selectfont\testtext  \\
+%
+light & 
+lc & 
+\fontseries{lc}\selectfont\testtext  &
+\fontseries{lc}\fontshape{it}\selectfont\testtext  \\
+%
+semilight & 
+slc & 
+\fontseries{slc}\selectfont\testtext  &
+\fontseries{slc}\fontshape{it}\selectfont\testtext  \\
+%
+medium & 
+c & 
+\fontseries{c}\selectfont\testtext  &
+\fontseries{c}\fontshape{it}\selectfont\testtext  \\
+%
+semibold & 
+sbc & 
+\fontseries{sbc}\selectfont\testtext  &
+\fontseries{sbc}\fontshape{it}\selectfont\testtext  \\
+%
+bold & 
+bc & 
+\fontseries{bc}\selectfont\testtext  &
+\fontseries{bc}\fontshape{it}\selectfont\testtext  \\
+%
+extrabold & 
+ebc & 
+\fontseries{ebc}\selectfont\testtext  &
+\fontseries{ebc}\fontshape{it}\selectfont\testtext  \\
+%
+ultrabold & 
+ebc & 
+\fontseries{ubc}\selectfont\testtext  &
+\fontseries{ubc}\fontshape{it}\selectfont\testtext  \\
+\hline
+\end{tabular}
+
+%%------------------------------
+%\bigskip
+%\begin{tabular}{llll}
+%\hline
+%\rowcolor{blue!12}
+%Font & Series & Upright & Italic \\
+%%
+%ultralight & 
+%ulsc  & 
+%\fontseries{ulsc}\selectfont\testtext  &
+%\fontseries{ulsc}\fontshape{it}\selectfont\testtext  \\
+%%
+%extralight & 
+%elsc & 
+%\fontseries{elsc}\selectfont\testtext  &
+%\fontseries{elsc}\fontshape{it}\selectfont\testtext  \\
+%%
+%light & 
+%lsc & 
+%\fontseries{lsc}\selectfont\testtext  &
+%\fontseries{lsc}\fontshape{it}\selectfont\testtext  \\
+%%
+%semilight & 
+%slsc & 
+%\fontseries{slsc}\selectfont\testtext  &
+%\fontseries{slsc}\fontshape{it}\selectfont\testtext  \\
+%%
+%medium & 
+%sc & 
+%\fontseries{sc}\selectfont\testtext  &
+%\fontseries{sc}\fontshape{it}\selectfont\testtext  \\
+%%
+%semibold & 
+%sbsc & 
+%\fontseries{sbsc}\selectfont\testtext  &
+%\fontseries{sbsc}\fontshape{it}\selectfont\testtext  \\
+%%
+%bold & 
+%bsc & 
+%\fontseries{bsc}\selectfont\testtext  &
+%\fontseries{bsc}\fontshape{it}\selectfont\testtext  \\
+%%
+%extrabold & 
+%ebsc & 
+%\fontseries{ebsc}\selectfont\testtext  &
+%\fontseries{ebsc}\fontshape{it}\selectfont\testtext  \\
+%%
+%ultrabold & 
+%ebsc & 
+%\fontseries{ubsc}\selectfont\testtext  &
+%\fontseries{ubsc}\fontshape{it}\selectfont\testtext  \\
+%\hline
+%\end{tabular}
+
+
+
+
+
+
+\newpage
+\scshape
+%------------------------------
+\begin{tabular}{llll}
+\hline
+\rowcolor{blue!12}
+Font & Series & Upright & Italic \\
+%ultralight & 
+%ul  & 
+%\fontseries{ul}\selectfont\testtext  &
+%\fontseries{ul}\fontshape{it}\selectfont\testtext  \\
+%%
+%extralight & 
+%el & 
+%\fontseries{el}\selectfont\testtext  &
+%\fontseries{el}\fontshape{it}\selectfont\testtext  \\
+%%
+light & 
+l & 
+\fontseries{l}\selectfont\testtext  &
+\fontseries{l}\fontshape{it}\selectfont\testtext  \\
+%
+semilight & 
+sl & 
+\fontseries{sl}\selectfont\testtext  &
+\fontseries{sl}\fontshape{it}\selectfont\testtext  \\
+%
+%medium & 
+%m & 
+%\fontseries{m}\selectfont\testtext  &
+%\fontseries{m}\fontshape{it}\selectfont\testtext  \\
+%%
+%semibold & 
+%sb & 
+%\fontseries{sb}\selectfont\testtext  &
+%\fontseries{sb}\fontshape{it}\selectfont\testtext  \\
+%%
+bold & 
+b & 
+\fontseries{b}\selectfont\testtext  &
+\fontseries{b}\fontshape{it}\selectfont\testtext  \\
+%
+%extrabold & 
+%eb & 
+%\fontseries{eb}\selectfont\testtext  &
+%\fontseries{eb}\fontshape{it}\selectfont\testtext  \\
+%%
+ultrabold & 
+eb & 
+\fontseries{ub}\selectfont\testtext  &
+\fontseries{ub}\fontshape{it}\selectfont\testtext  \\
+\hline
+\end{tabular}
+
+%%------------------------------
+%\bigskip
+%\begin{tabular}{llll}
+%\hline
+%\rowcolor{blue!12}
+%Font & Series & Upright & Italic \\
+%%
+%ultralight & 
+%ulec  & 
+%\fontseries{ulec}\selectfont\testtext  &
+%\fontseries{ulec}\fontshape{it}\selectfont\testtext  \\
+%%
+%extralight & 
+%elec & 
+%\fontseries{elec}\selectfont\testtext  &
+%\fontseries{elec}\fontshape{it}\selectfont\testtext  \\
+%%
+%light & 
+%lec & 
+%\fontseries{lec}\selectfont\testtext  &
+%\fontseries{lec}\fontshape{it}\selectfont\testtext  \\
+%%
+%semilight & 
+%slec & 
+%\fontseries{slec}\selectfont\testtext  &
+%\fontseries{slec}\fontshape{it}\selectfont\testtext  \\
+%%
+%medium & 
+%ec & 
+%\fontseries{ec}\selectfont\testtext  &
+%\fontseries{ec}\fontshape{it}\selectfont\testtext  \\
+%%
+%semibold & 
+%sbec & 
+%\fontseries{sbec}\selectfont\testtext  &
+%\fontseries{sbec}\fontshape{it}\selectfont\testtext  \\
+%%
+%bold & 
+%bec & 
+%\fontseries{bec}\selectfont\testtext  &
+%\fontseries{bec}\fontshape{it}\selectfont\testtext  \\
+%%
+%extrabold & 
+%ebec & 
+%\fontseries{ebec}\selectfont\testtext  &
+%\fontseries{ebec}\fontshape{it}\selectfont\testtext  \\
+%%
+%ultrabold & 
+%ebec & 
+%\fontseries{ubec}\selectfont\testtext  &
+%\fontseries{ubec}\fontshape{it}\selectfont\testtext  \\
+%\hline
+%\end{tabular}
+
+%------------------------------
+\bigskip
+\begin{tabular}{llll}
+\hline
+\rowcolor{blue!12}
+Font & Series & Upright & Italic \\
+%
+ultralight & 
+ulc  & 
+\fontseries{ulc}\selectfont\testtext  &
+\fontseries{ulc}\fontshape{it}\selectfont\testtext  \\
+%
+extralight & 
+elc & 
+\fontseries{elc}\selectfont\testtext  &
+\fontseries{elc}\fontshape{it}\selectfont\testtext  \\
+%
+light & 
+lc & 
+\fontseries{lc}\selectfont\testtext  &
+\fontseries{lc}\fontshape{it}\selectfont\testtext  \\
+%
+semilight & 
+slc & 
+\fontseries{slc}\selectfont\testtext  &
+\fontseries{slc}\fontshape{it}\selectfont\testtext  \\
+%
+medium & 
+c & 
+\fontseries{c}\selectfont\testtext  &
+\fontseries{c}\fontshape{it}\selectfont\testtext  \\
+%
+semibold & 
+sbc & 
+\fontseries{sbc}\selectfont\testtext  &
+\fontseries{sbc}\fontshape{it}\selectfont\testtext  \\
+%
+bold & 
+bc & 
+\fontseries{bc}\selectfont\testtext  &
+\fontseries{bc}\fontshape{it}\selectfont\testtext  \\
+%
+extrabold & 
+ebc & 
+\fontseries{ebc}\selectfont\testtext  &
+\fontseries{ebc}\fontshape{it}\selectfont\testtext  \\
+%
+ultrabold & 
+ebc & 
+\fontseries{ubc}\selectfont\testtext  &
+\fontseries{ubc}\fontshape{it}\selectfont\testtext  \\
+\hline
+\end{tabular}
+
+%%------------------------------
+%\bigskip
+%\begin{tabular}{llll}
+%\hline
+%\rowcolor{blue!12}
+%Font & Series & Upright & Italic \\
+%%
+%ultralight & 
+%ulsc  & 
+%\fontseries{ulsc}\selectfont\testtext  &
+%\fontseries{ulsc}\fontshape{it}\selectfont\testtext  \\
+%%
+%extralight & 
+%elsc & 
+%\fontseries{elsc}\selectfont\testtext  &
+%\fontseries{elsc}\fontshape{it}\selectfont\testtext  \\
+%%
+%light & 
+%lsc & 
+%\fontseries{lsc}\selectfont\testtext  &
+%\fontseries{lsc}\fontshape{it}\selectfont\testtext  \\
+%%
+%semilight & 
+%slsc & 
+%\fontseries{slsc}\selectfont\testtext  &
+%\fontseries{slsc}\fontshape{it}\selectfont\testtext  \\
+%%
+%medium & 
+%sc & 
+%\fontseries{sc}\selectfont\testtext  &
+%\fontseries{sc}\fontshape{it}\selectfont\testtext  \\
+%%
+%semibold & 
+%sbsc & 
+%\fontseries{sbsc}\selectfont\testtext  &
+%\fontseries{sbsc}\fontshape{it}\selectfont\testtext  \\
+%%
+%bold & 
+%bsc & 
+%\fontseries{bsc}\selectfont\testtext  &
+%\fontseries{bsc}\fontshape{it}\selectfont\testtext  \\
+%%
+%extrabold & 
+%ebsc & 
+%\fontseries{ebsc}\selectfont\testtext  &
+%\fontseries{ebsc}\fontshape{it}\selectfont\testtext  \\
+%%
+%ultrabold & 
+%ebsc & 
+%\fontseries{ubsc}\selectfont\testtext  &
+%\fontseries{ubsc}\fontshape{it}\selectfont\testtext  \\
+%\hline
+%\end{tabular}
+
+
+
+
+\upshape
+\end{document}
+
+
+
