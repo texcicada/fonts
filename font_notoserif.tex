@@ -1,4 +1,5 @@
 \documentclass[12pt]{article}
+\newcommand\myfontname{Noto Serif}
 \usepackage[table]{xcolor}
 \usepackage{fontspec}
 \setmainfont[
@@ -48,8 +49,8 @@
 %
     FontFace = {ulc}{\shapedefault}{*-CondensedThin},
     FontFace = {ulc}{it}{*-CondensedThinItalic},
-    FontFace = {elc}{\shapedefault}{*-CondensedLight},
-    FontFace = {elc}{it}{*-CondensedLightItalic},
+    FontFace = {elc}{\shapedefault}{*-CondensedExtraLight},
+    FontFace = {elc}{it}{*-CondensedExtraLightItalic},
     FontFace = {lc}{\shapedefault}{*-CondensedLight},
     FontFace = {lc}{it}{*-CondensedLightItalic},
     FontFace = {slc}{\shapedefault}{*-Condensed},
@@ -83,14 +84,53 @@
 %    FontFace = {ebsc}{it}{*-SemiCondensedExtraBoldItalic},
 %    FontFace = {ubsc}{\shapedefault}{*-SemiCondensedBlack},
 %    FontFace = {ubsc}{it}{*-SemiCondensedBlackItalic},
-]{Noto Serif}
+]{\myfontname}
 %%\setmainfont{Noto Sans}
 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+\DeclareRobustCommand{\ulcseries}{\fontseries{ulc}\selectfont}	\DeclareTextFontCommand{\textulc}{\ulcseries}
+\DeclareRobustCommand{\elcseries}{\fontseries{elc}\selectfont}	\DeclareTextFontCommand{\textelc}{\elcseries}
+\DeclareRobustCommand{\lcseries}{\fontseries{lc}\selectfont}	\DeclareTextFontCommand{\textlc}{\lcseries}
+\DeclareRobustCommand{\slcseries}{\fontseries{slc}\selectfont}	\DeclareTextFontCommand{\textslc}{\slcseries}
+\DeclareRobustCommand{\cseries}{\fontseries{c}\selectfont}	\DeclareTextFontCommand{\textc}{\cseries}
+\DeclareRobustCommand{\sbcseries}{\fontseries{sbc}\selectfont}	\DeclareTextFontCommand{\textsbc}{\sbcseries}
+\DeclareRobustCommand{\bcseries}{\fontseries{bc}\selectfont}	\DeclareTextFontCommand{\textbc}{\bcseries}
+\DeclareRobustCommand{\ebcseries}{\fontseries{ebc}\selectfont}	\DeclareTextFontCommand{\textebc}{\ebcseries}
+\DeclareRobustCommand{\ubcseries}{\fontseries{ubc}\selectfont}	\DeclareTextFontCommand{\textubc}{\ubcseries}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+\DeclareRobustCommand{\lseries}{\fontseries{l}\selectfont}	\DeclareTextFontCommand{\textl}{\lseries}
+\DeclareRobustCommand{\slseries}{\fontseries{sl}\selectfont}	\DeclareTextFontCommand{\textsl}{\slseries}
+	
+	
+\DeclareRobustCommand{\bseries}{\fontseries{b}\selectfont}	\DeclareTextFontCommand{\textb}{\bseries}
+	
+\DeclareRobustCommand{\ubseries}{\fontseries{ub}\selectfont}	\DeclareTextFontCommand{\textub}{\ubseries}
 
-\newcommand\testtext{{\large abc qwerty}}%\fontname\font}
+
+
+\newcommand\testtext{{\large abc qwerty}}%  \fontname\font}
 
 \begin{document}
 
+{\Large\bfseries\myfontname}
 
 %\end{tabular}
 %------------------------------
@@ -532,6 +572,179 @@ ebc &
 
 
 \upshape
+
+
+\bigskip
+\bigskip
+{\large Test}
+
+{\ulcseries qwerty} \textulc{qwerty}
+
+\newpage
+{\Large Sample Text}
+
+\bigskip
+\bigskip
+{\large Upright}
+
+
+
+
+
+
+
+
+\textulc{\testtext  \fontname\font}\par
+\textelc{\testtext  \fontname\font}\par
+\textlc{\testtext  \fontname\font}\par
+\textslc{\testtext  \fontname\font}\par
+\textc{\testtext  \fontname\font}\par
+\textsbc{\testtext  \fontname\font}\par
+\textbc{\testtext  \fontname\font}\par
+\textebc{\testtext  \fontname\font}\par
+\textubc{\testtext  \fontname\font}\par
+
+
+
+
+
+
+
+
+
+
+
+\textl{\testtext  \fontname\font}\par
+\textsl{\testtext  \fontname\font}\par
+
+
+\textb{\testtext  \fontname\font}\par
+
+\textub{\testtext  \fontname\font}\par
+
+\newpage
+\bigskip
+\bigskip
+{\large Italic}\itshape
+
+
+
+
+
+
+
+
+
+\textulc{\testtext  \fontname\font}\par
+\textelc{\testtext  \fontname\font}\par
+\textlc{\testtext  \fontname\font}\par
+\textslc{\testtext  \fontname\font}\par
+\textc{\testtext  \fontname\font}\par
+\textsbc{\testtext  \fontname\font}\par
+\textbc{\testtext  \fontname\font}\par
+\textebc{\testtext  \fontname\font}\par
+\textubc{\testtext  \fontname\font}\par
+
+
+
+
+
+
+
+
+
+
+
+\textl{\testtext  \fontname\font}\par
+\textsl{\testtext  \fontname\font}\par
+
+
+\textb{\testtext  \fontname\font}\par
+
+\textub{\testtext  \fontname\font}\par
+
+%===
+\upshape
+\bigskip
+\bigskip
+{\large Small Caps}
+\scshape
+
+\textulc{\testtext  \fontname\font}\par
+\textelc{\testtext  \fontname\font}\par
+\textlc{\testtext  \fontname\font}\par
+\textslc{\testtext  \fontname\font}\par
+\textc{\testtext  \fontname\font}\par
+\textsbc{\testtext  \fontname\font}\par
+\textbc{\testtext  \fontname\font}\par
+\textebc{\testtext  \fontname\font}\par
+\textubc{\testtext  \fontname\font}\par
+
+
+
+
+
+
+
+
+
+
+
+\textl{\testtext  \fontname\font}\par
+\textsl{\testtext  \fontname\font}\par
+
+
+\textb{\testtext  \fontname\font}\par
+
+\textub{\testtext  \fontname\font}\par
+
+\newpage
+\upshape
+\bigskip
+\bigskip
+{\large Small Caps Italic}
+\scshape
+\itshape
+
+
+
+
+
+
+
+
+
+\textulc{\testtext  \fontname\font}\par
+\textelc{\testtext  \fontname\font}\par
+\textlc{\testtext  \fontname\font}\par
+\textslc{\testtext  \fontname\font}\par
+\textc{\testtext  \fontname\font}\par
+\textsbc{\testtext  \fontname\font}\par
+\textbc{\testtext  \fontname\font}\par
+\textebc{\testtext  \fontname\font}\par
+\textubc{\testtext  \fontname\font}\par
+
+
+
+
+
+
+
+
+
+
+%\addfontfeature{Colour=blue, Scale=2}
+
+\textl{\testtext  \fontname\font}\par
+\textsl{\testtext  \fontname\font}\par
+
+
+\textb{\testtext  \fontname\font}\par
+
+\textub{\testtext  \fontname\font}\par
+
+%===
+
 \end{document}
 
 
