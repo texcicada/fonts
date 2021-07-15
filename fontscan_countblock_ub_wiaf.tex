@@ -1,5 +1,5 @@
 \documentclass{article}
-\newcommand\mypath{}%
+\newcommand\mypath{C:/Users/epam2/Downloads/fonts/1/c/ttf/}%
 \usepackage[table]{xcolor}
 \pagecolor{brown!3}
 \usepackage{graphicx}
@@ -53,6 +53,9 @@ for i = 1, #glyphs do
       if (glyphs[i].unicode >= mystartrange ) then
       if (glyphs[i].unicode <= myendrange ) then
 	   			tex.sprint("{\\forn\\char" .. glyphs[i].unicode .. "}\\ ")
+--   tex.print("\\ {\\scriptsize=")
+--   tex.print(-2, glyphs[i].name)
+--   tex.sprint('}\\\\')
 		   end
 		   end
    end
@@ -143,7 +146,7 @@ for i = blockstart, blockfinish do
 \begin{luacode}
 	function openmyfont(xxx)
 	  f = fontloader.open(xxx)
-	  tex.sprint("{\\flab " .. f.fullname .. ", " .. f.glyphcnt .. " chars}\\par")
+	  tex.sprint("{\\colorbox{blue!12}{\\large\\flab " .. f.fullname .. ", " .. f.glyphcnt .. " chars}}\\par")
  end
 \end{luacode}
 
@@ -216,7 +219,7 @@ end
 --  pc = ck / (blockfinish-blockstart+1) * 100
 --	tex.sprint(f.fullname .. "\\par")
 	if ck > 0 then
-		tex.sprint("\\par - {\\flab " .. blockname .. "}\\par\\par  \\bigskip")
+		tex.sprint("\\par {\\flab - \\colorbox{blue!5}{" .. blockname .. "}    \\ {\\small (" .. ck .. " out of [" .. blockfinish-blockstart+1 .. "] chars)}}\\par\\par  \\bigskip")
 --		tex.sprint(ck .. " out of [" .. blockfinish-blockstart+1 .. "] chars:  " .. pc .. "\\par")
 		end
 --	fontloader.close(f)
@@ -2715,9 +2718,41 @@ end
 %\wiafshowblocks{\mypath}{.ttf}{Mada-Medium}{mada}
 
 
-\wiafshowblocks{\mypath}{.ttf}{Mina-A}{mina}
+%\wiafshowblocks{\mypath}{.ttf}{Mina-A}{mina}
 
 
-\wiafshowblocks{\mypath}{.ttf}{Musica}{musica}
+%\wiafshowblocks{\mypath}{.ttf}{Musica}{musica}
+
+\wiafshowblocks{\mypath}{.ttf}{NotoEmoji-Regular}{emoji}
+
+
+\wiafshowblocks{\mypath}{.ttf}{NuosuSIL}{nuoso}
+
+\wiafshowblocks{\mypath}{.ttf}{Ouroboros_web}{ouroboros}
+
+\wiafshowblocks{\mypath}{.ttf}{OxygenMono-Regular}{oxygen}
+
+\wiafshowblocks{\mypath}{.ttf}{Paskol}{paskol}
+
+\wiafshowblocks{c:/windows/fonts/}{.ttf}{times}{tnr}
+
+\newpage
+\begin{multicols}{6}\noindent
+\printblockIPAExtensions
+\end{multicols}
+
+\wiafshowblocks{\mypath}{.ttf}{Qahiri-Regular}{qah}
+
+\wiafshowblocks{\mypath}{.ttf}{Sarabun-Regular}{sara}
+
+
+%%\renewcommand\fstartrange{592}
+%%\renewcommand\fendrange{687}
+%%\renewcommand\myfont{C:/windows/fonts/times.ttf}%
+%%%\begin{multicols}{6}\noindent
+%%%	\doprintmysample
+%%%\end{multicols}
+%%\printmyfont
+%%
 
 \end{document}
